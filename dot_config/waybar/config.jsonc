@@ -9,8 +9,12 @@
     "hyprland/workspaces",
     "clock#date"
   ],
-  "modules-center": ["custom/screenrecording-indicator",
-  "clock#time", "custom/timer", "custom/update"],
+  "modules-center": [
+    "custom/screenrecording-indicator",
+    "clock#time",
+    "custom/timer",
+    "custom/update"
+  ],
   "modules-right": [
     // "group/tray-expander",
     "bluetooth",
@@ -51,7 +55,6 @@
     "signal": 7,
     "interval": 3600
   },
-
   "cpu": {
     "interval": 5,
     "format": "󰍛",
@@ -71,7 +74,13 @@
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
   "network": {
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
@@ -89,8 +98,30 @@
     "format-charging": "{icon}",
     "format-plugged": "",
     "format-icons": {
-      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+      "charging": [
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰢞",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ],
+      "default": [
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+      ]
     },
     "format-full": "󰂅",
     "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
@@ -121,7 +152,11 @@
     "format-icons": {
       "headphone": "",
       "headset": "",
-      "default": ["", "", ""]
+      "default": [
+        "",
+        "",
+        ""
+      ]
     }
   },
   "group/tray-expander": {
@@ -130,7 +165,10 @@
       "transition-duration": 600,
       "children-class": "tray-group-item"
     },
-    "modules": ["custom/expand-icon", "tray"]
+    "modules": [
+      "custom/expand-icon",
+      "tray"
+    ]
   },
   "custom/expand-icon": {
     "format": " ",
@@ -172,20 +210,20 @@
     "spacing": 12
   },
   "custom/timer": {
-    "exec": "~/.local/bin/waybar_timer hook",
+    "exec": "~/.scripts/waybar_timer hook",
     "exec-on-event": false,
     "return-type": "json",
     "format": "{icon} {0}",
     "format-icons": {
-        "standby": "😛",
-        "running": "🥵",
-        "paused": "😕"
+      "standby": "😛",
+      "running": "🥵",
+      "paused": "😕"
     },
-    "on-click": "~/.local/bin/waybar_timer new 25 'notify-send \"Session finished\" && paplay /usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga'",
-    "on-click-right": "/home/max/.local/bin/waybar_timer new 5 'notify-send \"Short break done!\" && paplay /usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga'",
-    "on-click-middle": "~/.local/bin/waybar_timer cancel",
-    "on-double-click": "/home/max/.local/bin/waybar_timer togglepause",
-    "on-scroll-up": "/home/max/.local/bin/waybar_timer increase 60 || home/max/.local/bin/waybar_timer new 1 'notify-send -u critical \"Timer expired\"'",
-    "on-scroll-down": "/home/max/.local/bin/waybar_timer decrease 60"
-}
+    "on-click": "~/.scripts/waybar_timer new 25 'notify-send \"Session finished\" && paplay /usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga'",
+    "on-click-right": "/home/max/.scripts/waybar_timer new 5 'notify-send \"Short break done!\" && paplay /usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga'",
+    "on-click-middle": "~/.scripts/waybar_timer cancel",
+    "on-double-click": "/home/max/.scripts/waybar_timer togglepause",
+    "on-scroll-up": "/home/max/.scripts/waybar_timer increase 60 || home/max/.scripts/waybar_timer new 1 'notify-send -u critical \"Timer expired\"'",
+    "on-scroll-down": "/home/max/.scripts/waybar_timer decrease 60"
+  }
 }
