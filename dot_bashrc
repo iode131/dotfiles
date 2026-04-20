@@ -10,6 +10,7 @@ source ~/.local/share/omarchy/default/bash/rc
 # Make an alias for invoking commands you use constantly
 alias p='python'
 
+alias met='python3 ~/Projects/metronome/metronome.py'
 alias l='eza -lh --group-directories-first --icons=auto'
 alias ll='ls -a'
 alias lt='eza --tree --level=2 --long --icons --git'
