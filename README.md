@@ -20,6 +20,7 @@ Therefore, most of it lies in .dotfiles:
 - Slack: use as a webapp. There is a keybinding for it in `.config/hypr`. Not sure that i need to install a webapp at all if i only run it with the shortcut
 - waybar-timer: download binary from [GH](https://github.com/jbirnick/waybar-timer) -> put it in `~/.scripts/` -> its start command is already in `hyprland.conf`
 - metronome: simple cli metronome on my github. There is an alias for it in .bashrc
+- Postman: AUR install
 
 ## WIP
 
