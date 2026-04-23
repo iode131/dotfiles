@@ -22,6 +22,7 @@ Therefore, most of it lies in .dotfiles:
 - metronome: simple cli metronome on my github. There is an alias for it in .bashrc
 - Postman: AUR install
 - ipyton: pacman install
+- cmake: pacman install
 
 ## WIP
 
