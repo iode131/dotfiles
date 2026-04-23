@@ -21,6 +21,7 @@ Therefore, most of it lies in .dotfiles:
 - waybar-timer: download binary from [GH](https://github.com/jbirnick/waybar-timer) -> put it in `~/.scripts/` -> its start command is already in `hyprland.conf`
 - metronome: simple cli metronome on my github. There is an alias for it in .bashrc
 - Postman: AUR install
+- ipyton: pacman install
 
 ## WIP
 
