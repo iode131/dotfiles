@@ -22,4 +22,6 @@ alias lg='lazygit'
 alias un='uv run nvim'
 alias gsu='git submodule update --init --recursive'
 
+alias rsync='rsync -zav --exclude="__pycache__" --exclude=".git" --exclude="*.pyc" --exclude=".venv" --exclude="*pb2*"'
+
 . "$HOME/.local/share/../bin/env"
