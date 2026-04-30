@@ -1,9 +1,14 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
 omarchy-pkg-add cmake 
+omarchy-pkg-add ipython 
+omarchy-pkg-aur-add postman-bin
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-
+{{ if eq .chezmoi.hostname "omarchy" -}}
+omarchy-pkg-aur-add plexmediaserver
+sudo systemctl enable plexmediaserver
+{{ end }}
 
 {{ end -}}
