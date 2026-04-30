@@ -8,7 +8,8 @@ source ~/.local/share/omarchy/default/bash/rc
 # Add your own exports, aliases, and functions here.
 #
 # Make an alias for invoking commands you use constantly
-alias p='python'
+alias p='python3'
+alias cat='bat'
 
 alias met='python3 ~/Projects/metronome/metronome.py'
 alias l='eza -lh --group-directories-first --icons=auto'
