@@ -7,7 +7,7 @@ omarchy-pkg-aur-add postman-bin
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 {{ if eq .chezmoi.hostname "omarchy" -}}
-omarchy-pkg-aur-add plexmediaserver
+omarchy-pkg-aur-add plex-media-server
 sudo systemctl enable plexmediaserver
 {{ end }}
 
