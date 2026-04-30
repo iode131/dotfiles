@@ -1,0 +1,9 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+omarchy-package-add cmake 
+
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+
+
+{{ end -}}
