@@ -1,7 +1,8 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
 
-omarchy-pkg-remove signal-desktop
+omarchy-pkg-drop signal-desktop
+omarchy-pkg-drop xournalpp
 omarchy-webapp-remove Fizzy
 omarchy-webapp-remove Basecamp
 omarchy-webapp-remove Zoom
