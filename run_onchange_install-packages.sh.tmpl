@@ -1,12 +1,16 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
+
+# Common stuff
 omarchy-pkg-add cmake 
 omarchy-pkg-add ipython 
 omarchy-pkg-aur-add postman-bin
+omarchy-pkg-add blanket
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 {{ if eq .chezmoi.hostname "omarchy" -}}
+# For my desktop/home setup only
 
 omarchy-pkg-aur-add plex-media-server
 sudo systemctl enable plexmediaserver
@@ -14,6 +18,5 @@ omarchy-pkg-add qbittorrent
 
 {{ end }}
 
-omarchy-pkg-add blanket
 
 {{ end -}}

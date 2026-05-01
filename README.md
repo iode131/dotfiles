@@ -17,7 +17,7 @@ Therefore, most of it lies in .dotfiles:
 
 Depending on their sources, packages should be installed in the following ways:
 - pacman stuff: use the script that comes with Omarchy: `omarchy-pkg-add [package-name]` instead of straight `pacman`;
-- AUR stuff: use `omarchy-pkg-aur-install`
+- AUR stuff: use `omarchy-pkg-aur-add`
 - other: follow their instructions...
 
 ### List:
@@ -27,15 +27,24 @@ Depending on their sources, packages should be installed in the following ways:
 - waybar-timer: download binary from [GH](https://github.com/jbirnick/waybar-timer) -> put it in `~/.scripts/` -> its start command is already in `hyprland.conf`
 - metronome: simple cli metronome on my github. There is an alias for it in .bashrc
 - Postman: AUR install -> `postman-bin`
-- ipyton: pacman install -> 
+- ipython: pacman install -> 
 - cmake: pacman install
 - blanket (background noise): pacman install 
 - qbittorrent: pacman
+
+## Stuff i want removed
+- Signal: `omarchy-pkg-drop signal-desktop`
+- xournalpp: `omarchy-pkg-drop xournalpp`
+- Fizzy: `omarchy-webapp-remove Fizzy`
+- Basecamp: `omarchy-webapp-remove Basecamp`
+- Zoom: `omarchy-webapp-remove Zoom`
+
 
 ## WIP
 
 There are a few things i would like to add:
 
+- find a simple way to handle SSH keys;
 - handling system snapshots
 - setting up ChezMoi to a useful state:
   - triple setup: 4Ksingle / single laptop / laptop+HDscreen
