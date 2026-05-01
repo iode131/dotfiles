@@ -29,6 +29,7 @@ Depending on their sources, packages should be installed in the following ways:
 - Postman: AUR install -> `postman-bin`
 - ipyton: pacman install -> 
 - cmake: pacman install
+- blanket (background noise): pacman install 
 
 ## WIP
 
