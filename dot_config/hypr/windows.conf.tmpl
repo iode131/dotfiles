@@ -12,5 +12,9 @@ windowrule = opacity 1.0 1.0, match:workspace special:scratchpad
 windowrule = opacity 1.0 1.0, match:class chrome-youtube.com__-Default
 windowrule = opacity 1.0 1.0, match:class chrome-twitch.com__directory_following-Default
 
+{{ if eq .chezmoi.hostname "omarchy" }}
 workspace = special:scratchpad, gapsout:80, gapsin:40, on-created-empty:alacritty
+{{ else }}
+workspace = special:scratchpad, gapsout:20, gapsin:10, on-created-empty:alacritty
+{{ end }}
 

@@ -27,10 +27,12 @@ general {
 # LAYOUT specifics                                                                     #  
 ########################################################################################
 
+{{ if eq .chezmoi.hostname "omarchy" }}
 # Layout-agnostic settings (introduced in 0.54)
 layout {
     single_window_aspect_ratio = 1 1 # If there is only 1 window on the workspace, it displays as a square
 }
+{{ end }}
 
 # See https://wiki.hypr.land/Configuring/Scrolling-Layout/ for more
 scrolling {
