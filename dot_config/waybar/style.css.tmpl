@@ -71,8 +71,15 @@ tooltip {
 
 #clock.time {
   background-color: @background;
+
+  {{ if eq .chezmoi.hostname "omarchy" }}
   padding-right: 500px;
   font-size: 20px;
+
+  {{ else if .chezmoi.hostname "laptop" }}
+  font-size: 14px;
+  {{ end }}
+
   /* color: #F9CC6C; */
 }
 
