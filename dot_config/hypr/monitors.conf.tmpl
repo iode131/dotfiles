@@ -8,17 +8,17 @@
 # monitor=,preferred,auto,auto
 
 
-{{- if eq .chezmoi.hostname "omarchy" }}
+{{ if eq .chezmoi.hostname "omarchy" }}
 # Good compromise for 27" or 32" 4K monitors (but fractional!)
 env = GDK_SCALE,1.75
 monitor=,preferred,auto,1.25
 
-{{- else if eq .chezmoi.hostname "laptop"}}
+{{ else if eq .chezmoi.hostname "laptop" }}
 # Straight 1x setup for low-resolution displays like 1080p or 1440p
 env = GDK_SCALE,1
 monitor=,preferred,auto,2.0
 
-{{- end }}
+{{ end }}
 
 # Example for Framework 13 w/ 6K XDR Apple display
 # monitor = DP-5, 6016x3384@60, auto, 2
