@@ -1,7 +1,9 @@
 # Learn how to configure Hyprland: https://wiki.hyprland.org/Configuring/
 
+{{ if eq .chezmoi.hostname "omarchy" }}
 # Starting waybar_timer now because it MUST be running when waybar starts
 exec-once = uwsm app -- ~/.scripts/waybar_timer serve & sleep 0.5
+{{ end }}
 
 # Use defaults Omarchy defaults (but don't edit these directly!)
 source = ~/.local/share/omarchy/default/hypr/autostart.conf
