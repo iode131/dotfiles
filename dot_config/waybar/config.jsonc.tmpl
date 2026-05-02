@@ -21,14 +21,15 @@
   ],
   "modules-right": [
     // "group/tray-expander",
-    "bluetooth",
-    "pulseaudio",
-    "cpu",
-
+    //
     {{ if eq .chezmoi.hostname "laptop"}}
     "network",
-    "battery"
+    "battery",
     {{ end }}
+
+    "bluetooth",
+    "pulseaudio",
+    "cpu"
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
