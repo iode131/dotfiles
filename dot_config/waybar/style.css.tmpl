@@ -76,7 +76,7 @@ tooltip {
   padding-right: 500px;
   font-size: 20px;
 
-  {{ else if .chezmoi.hostname "laptop" }}
+  {{ else if eq .chezmoi.hostname "laptop" }}
   font-size: 14px;
   {{ end }}
 
