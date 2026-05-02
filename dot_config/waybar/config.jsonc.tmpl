@@ -12,7 +12,11 @@
   "modules-center": [
     "custom/screenrecording-indicator",
     "clock#time",
+
+  {{- if eq .chezmoi.hostname "omarchy" }}
     "custom/timer",
+  {{- end }}
+
     "custom/update"
   ],
   "modules-right": [
@@ -209,6 +213,8 @@
     "icon-size": 12,
     "spacing": 12
   },
+
+  {{- if eq .chezmoi.hostname "omarchy" }}
   "custom/timer": {
     "exec": "~/.scripts/waybar_timer hook",
     "exec-on-event": false,
@@ -226,4 +232,5 @@
     "on-scroll-up": "/home/max/.scripts/waybar_timer increase 60 || home/max/.scripts/waybar_timer new 1 'notify-send -u critical \"Timer expired\"'",
     "on-scroll-down": "/home/max/.scripts/waybar_timer decrease 60"
   }
+  {{- end }}
 }
