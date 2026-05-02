@@ -22,10 +22,13 @@
   "modules-right": [
     // "group/tray-expander",
     "bluetooth",
-    // "network",
     "pulseaudio",
-    "cpu"
-    // "battery"
+    "cpu",
+
+    {{ if eq .chezmoi.hostname "laptop"}}
+    "network",
+    "battery"
+    {{ end }}
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
