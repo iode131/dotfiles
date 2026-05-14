@@ -26,7 +26,7 @@ Depending on their sources, packages should be installed in the following ways:
 - Jellyfin: pacman install jellyfin-server, jellyfin-web, jellyfin-ffmpeg
 - Slack: use as a webapp. There is a keybinding for it in `.config/hypr`. Not sure that i need to install a webapp at all if i only run it with the shortcut
 - waybar-timer: download binary from [GH](https://github.com/jbirnick/waybar-timer) -> put it in `~/.scripts/` -> its start command is already in `hyprland.conf`
-- metronome: simple cli metronome on my github. There is an alias for it in .bashrc
+- metronome: simple cli metronome on my github. There is an alias for it in .bashrc. Just clone in `~/Projects/`
 - Postman: AUR install -> `postman-bin`
 - ipython: pacman install -> 
 - cmake: pacman install
