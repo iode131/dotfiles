@@ -22,7 +22,8 @@ Depending on their sources, packages should be installed in the following ways:
 
 ### List:
 - uv: `curl -LsSf https://astral.sh/uv/install.sh | sh` and that's it!
-- Plex media server: AUR install -> enable systemd service with `sudo systemctl enable plexmediaserver`
+- ~~Plex media server: AUR install -> enable systemd service with `sudo systemctl enable plexmediaserver`~~ NOT USING PLEX ANYMORE! JELLYFIN instead
+- Jellyfin: pacman install jellyfin-server, jellyfin-web, jellyfin-ffmpeg
 - Slack: use as a webapp. There is a keybinding for it in `.config/hypr`. Not sure that i need to install a webapp at all if i only run it with the shortcut
 - waybar-timer: download binary from [GH](https://github.com/jbirnick/waybar-timer) -> put it in `~/.scripts/` -> its start command is already in `hyprland.conf`
 - metronome: simple cli metronome on my github. There is an alias for it in .bashrc

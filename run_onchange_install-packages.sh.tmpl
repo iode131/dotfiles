@@ -12,9 +12,13 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 {{ if eq .chezmoi.hostname "omarchy" -}}
 # For my desktop/home setup only
 
-omarchy-pkg-aur-add plex-media-server
-sudo systemctl enable plexmediaserver
+omarchy-pkg-add jellyfin-server
+omarchy-pkg-add jellyfin-web
+omarchy-pkg-add jellyfin-ffmpeg
 omarchy-pkg-add qbittorrent
+
+sudo systemctl enable --now jellyfin
+sudo ufw allow 8096/tcp comment "Jellyfin HTTP"
 
 {{ end }}
 
