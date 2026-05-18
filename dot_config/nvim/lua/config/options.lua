@@ -9,6 +9,7 @@ vim.opt.scrolloff = 10
 -- LazyVim auto format
 vim.g.autoformat = false
 vim.opt.wrap = true
+vim.diagnostic.enable(false)
 
 vim.opt.backup = false
 vim.opt.writebackup = false
