@@ -8,4 +8,4 @@
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
 -- this disables a builtin autocmd that enables spell checking by FileType on open.
-vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+-- vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
