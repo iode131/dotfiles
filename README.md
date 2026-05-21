@@ -11,7 +11,7 @@ Therefore, most of it lies in .dotfiles:
 
 - `ssh-keygen` and then set it up with Bitbucket and GH;
 - install 1password extension in the browser and set it up;
-- install extra themes;
+- ~~install extra themes~~
 
 ## Extra applications
 
@@ -46,8 +46,10 @@ Depending on their sources, packages should be installed in the following ways:
 There are a few things i would like to add:
 
 - find a simple way to handle SSH keys;
-- handling system snapshots
+- ~~handling system snapshots~~ (handled by limine out-of-the-box)
 - setting up ChezMoi to a useful state:
   - triple setup: 4Ksingle / single laptop / laptop+HDscreen
   - good commit routine
 - find a better browser. (Chromium might be all i need but looking around could still show interesting options)
+- investigate using `task` (aka TaskWarrior) to manage simple task lists and todos. Maybe add it to the install script (pacman = "task")
+
