@@ -32,6 +32,7 @@ Depending on their sources, packages should be installed in the following ways:
 - cmake: pacman install
 - blanket (background noise): pacman install 
 - qbittorrent: pacman
+- inbox: script to quickly dump into my Obsidian inbox with SUPER-SHIFT-I. Get from gh and put in ~/.scripts/
 
 ## Stuff i want removed
 - Signal: `omarchy-pkg-drop signal-desktop`
@@ -51,5 +52,6 @@ There are a few things i would like to add:
   - triple setup: 4Ksingle / single laptop / laptop+HDscreen
   - good commit routine
 - find a better browser. (Chromium might be all i need but looking around could still show interesting options)
-- investigate using `task` (aka TaskWarrior) to manage simple task lists and todos. Maybe add it to the install script (pacman = "task")
+- ~~investigate using `task` (aka TaskWarrior) to manage simple task lists and todos. Maybe add it to the install script (pacman = "task")~~ NOT GOOD ENOUGH
+- revamp my Obsidian setup
 
