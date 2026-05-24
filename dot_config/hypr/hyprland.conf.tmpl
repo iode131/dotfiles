@@ -3,6 +3,12 @@
 {{ if eq .chezmoi.hostname "omarchy" }}
 # Starting waybar_timer now because it MUST be running when waybar starts
 exec-once = uwsm app -- ~/.scripts/waybar_timer serve & sleep 0.5
+
+# This fixes slightly blurry UI in Davinci Resolve
+xwayland {
+    force_zero_scaling = true
+  }
+
 {{ end }}
 
 # Use defaults Omarchy defaults (but don't edit these directly!)
