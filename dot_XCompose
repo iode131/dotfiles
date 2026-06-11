@@ -9,10 +9,10 @@ include "%H/.local/share/omarchy/default/xcompose"
 
 # Roman numeral for chords
 
-<Multi_key> <space> <1> : "Ⅰ"
-<Multi_key> <space> <2> : "Ⅱ"
-<Multi_key> <space> <3> : "Ⅲ"
-<Multi_key> <space> <4> : "Ⅳ"
-<Multi_key> <space> <5> : "Ⅴ"
-<Multi_key> <space> <6> : "Ⅵ"
-<Multi_key> <space> <7> : "Ⅶ"
+<Multi_key> <space> <1> : "I"
+<Multi_key> <space> <2> : "II"
+<Multi_key> <space> <3> : "III"
+<Multi_key> <space> <4> : "IV"
+<Multi_key> <space> <5> : "V"
+<Multi_key> <space> <6> : "VI"
+<Multi_key> <space> <7> : "VII"
