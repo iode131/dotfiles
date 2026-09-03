@@ -42,9 +42,11 @@ hl.config({
     -- https://wiki.hyprland.org/Configuring/Variables/#blur
     blur = {
         enabled = true,
-        size = 6,
-        passes = 1,
+        size = 10,
+        passes = 3,
         vibrancy = 0.1696,
+        special = true, -- blur the workspace behind the scratchpad
+        xray = true, -- blur against the frozen background instead of stacking through layers
     }
   }
 })
