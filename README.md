@@ -1,10 +1,9 @@
-# My Omarchy config
+# My Omarchy config for QUATTRO
 
-My config is rather close to the stock Omarchy, at least to this day (v3.5.1) **APRIL 18 2026**.
+My config is rather close to the stock Omarchy, at least to this day (v4.0.2) **SEPTEMBER 3 2026**.
 Therefore, most of it lies in .dotfiles:
 
 - .config/hypr/*
-- .config/waybar/*
 - starship.toml
 
 ## Manual config steps
@@ -25,7 +24,7 @@ Depending on their sources, packages should be installed in the following ways:
 - ~~Plex media server: AUR install -> enable systemd service with `sudo systemctl enable plexmediaserver`~~ NOT USING PLEX ANYMORE! JELLYFIN instead
 - Jellyfin: pacman install jellyfin-server, jellyfin-web, jellyfin-ffmpeg
 - Slack: use as a webapp. There is a keybinding for it in `.config/hypr`. Not sure that i need to install a webapp at all if i only run it with the shortcut
-- waybar-timer: download binary from [GH](https://github.com/jbirnick/waybar-timer) -> put it in `~/.scripts/` -> its start command is already in `hyprland.conf`
+- ~~waybar-timer: download binary from [GH](https://github.com/jbirnick/waybar-timer) -> put it in `~/.scripts/` -> its start command is already in `hyprland.conf`~~
 - metronome: simple cli metronome on my github. There is an alias for it in .bashrc. Just clone in `~/Projects/`
 - Postman: AUR install -> `postman-bin`
 - ipython: pacman install -> 
@@ -40,6 +39,10 @@ Depending on their sources, packages should be installed in the following ways:
 - Fizzy: `omarchy-webapp-remove Fizzy`
 - Basecamp: `omarchy-webapp-remove Basecamp`
 - Zoom: `omarchy-webapp-remove Zoom`
+
+## Deprecated by Quattro:
+- waybar
+- mako
 
 
 ## WIP
