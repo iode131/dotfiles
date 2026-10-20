@@ -16,13 +16,13 @@
           "id": "omarchy.keyboard-layout"
         },
         {
-          "id": "omarchy.weather"
-        },
-        {
           "id": "sterre.timers"
         },
         {
           "id": "omarchy.system-update"
+        },
+        {
+          "id": "io.github.nameproof.nordic-weather"
         }
       ],
       "left": [
@@ -72,5 +72,11 @@
       "id": "bibek.obsidian-search"
     }
   ],
-  "version": 1
+  "version": 1,
+  "disabledPlugins": [
+    "omarchy.weather"
+  ],
+  "cloneSourceRestores": [
+    "io.github.nameproof.nordic-weather"
+  ]
 }
