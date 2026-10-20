@@ -23,6 +23,7 @@ o.bind("SUPER + SHIFT + ALT + G", "WhatsApp", { webapp = "https://web.whatsapp.c
 o.bind("SUPER + SHIFT + A", "Claude", { webapp = "https://claude.ai" })
 o.bind("SUPER + SHIFT + S", "Slack", { webapp = "https://app.slack.com/client/TJTRKF5J4/C032669D5QQ", focus = true })
 
+o.bind("SUPER + SHIFT + F", "Yazi", { tui = "yazi" })
 -- Window resizing
 o.bind("SUPER + SHIFT + CTRL + LEFT", "Expand window left", hl.dsp.window.resize({ x = -100, y = 0, relative = true }))
 o.bind("SUPER + SHIFT + CTRL + RIGHT", "Shrink window left", hl.dsp.window.resize({ x = 100, y = 0, relative = true }))
