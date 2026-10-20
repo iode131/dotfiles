@@ -13,6 +13,9 @@
 -- ~/.config/hypr/hyprland.lua before require("default.hypr.omarchy"):
 --   omarchy_preinstalled_bindings = false
 
+-- Removing some builtin bindings
+hl.unbind("SUPER + SHIFT + F")
+
 -- Re-adding some of the preinstalled ones
 o.bind("SUPER + SHIFT + O", "Obsidian", { launch = "obsidian", focus = "obsidian" })
 o.bind("SUPER + SHIFT + W", "Omawrite", { launch = "omawrite" })
